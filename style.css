@@ -163,7 +163,8 @@ header ul li:nth-child(1) a{
 .icons a{
     font-size: 20px;
     color: #eee;
-    background: var(--main-color);
+    border: solid;
+    border-color: var(--main-color);
     text-decoration: none;
 
     width: 35px;
@@ -178,7 +179,9 @@ header ul li:nth-child(1) a{
 }
 
 .icons a:hover{
-    transform: scale(1.1);
+    transform: scale(1.3);
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
 }
 
 .fa-location-dot{
@@ -536,6 +539,84 @@ img{
 }
 
 /*CV*/
+
+/* compétences sections */
+.competences-section{
+    margin-top: 4rem;
+}
+
+.competences-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 110px;
+    gap: 1em;
+}
+
+.fa-html5:hover{
+    transition: 0.15s ease-in-out;
+    transform: scale(1.1);
+    background-color: #E34C26;
+    text-shadow: 0 0 25px #E34C26, 0 0 50px #E34C26;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    
+}
+
+.fa-css3-alt:hover{
+    transition: 0.15s ease-in-out;
+    transform: scale(1.1);
+
+    background-color: #264DE4;
+    text-shadow: 0 0 25px #264DE4, 0 0 25px #264DE4;
+    color: transparent;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+.fa-js:hover{
+    transition: 0.15s ease-in-out;
+    transform: scale(1.1);
+
+    background-color: #F0DB4F;
+    text-shadow: 0 0 25px #F0DB4F, 0 0 25px #F0DB4F;
+    color: transparent;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+.fa-php:hover{
+    transition: 0.15s ease-in-out;
+    transform: scale(1.1);
+
+    background-color: #8993BE;
+    text-shadow: 0 0 25px #8993BE, 0 0 25px #8993BE;
+    color: transparent;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+.fa-java:hover{
+    transition: 0.15s ease-in-out;
+    transform: scale(1.1);
+    
+    background-color: #F89820;
+    text-shadow: 0 0 25px #F89820, 0 0 25px #F89820;
+    color: transparent;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+
+/* compétences sections */
 
 /*Responsive*/
 
