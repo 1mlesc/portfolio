@@ -615,6 +615,18 @@ img{
     -webkit-background-clip: text;
     -moz-background-clip: text;
 }
+.fa-database:hover{
+    transition: 0.15s ease-in-out;
+    transform: scale(1.1);
+    
+    background-color: #221fbd;
+    text-shadow: 0 0 10px #221fbd, 0 0 10px #221fbd;
+    color: transparent;
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
 
 /* compétences sections */
 
