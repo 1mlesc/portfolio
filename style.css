@@ -96,6 +96,11 @@ header ul li:nth-child(1) a{
     color: white;
 }
 
+
+
+
+
+
 #btn{
     all: unset;
     cursor: pointer;
@@ -121,6 +126,20 @@ header ul li:nth-child(1) a{
     display: flex;
     align-items: center;
     gap: 3rem;
+}
+
+.typed{
+    overflow: hidden;
+    border-right: .15em solid var(--main-color);
+    white-space: nowrap;
+    animation: typing 1s forwards;
+    font-size: 1.6rem;
+    width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+
 }
 
 .icons{
@@ -404,6 +423,7 @@ img{
     opacity: 1;
     pointer-events: auto;
 }
+
 
 
 /*Responsive*/
