@@ -181,6 +181,10 @@ header ul li:nth-child(1) a{
     transform: scale(1.1);
 }
 
+.fa-location-dot{
+    color: var(--main-color);
+}
+
 .header h3{
     color: var(--main-color);
     font-size: 25px;
@@ -310,6 +314,96 @@ img{
 
 /* .s-container */
 
+/*parcours-section*/
+
+.parcours-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.parcours-item::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: var(--main-color);
+
+    left: calc(50% - 1px);
+}
+.parcours-item{
+    width: 100%;
+    position: relative;
+}
+.parcours-item:last-child{
+    margin-bottom: 0;
+}
+.parcours-item:nth-child(odd){
+    padding-right: calc(50% + 30px);
+    text-align: right;
+}
+.parcours-item:nth-last-child(even){
+    padding-left: calc(50% + 30px);
+}
+.parcours-item-dot{
+    height: 21px;
+    width: 21px;
+    background-color: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color), 0 0 50px var(--main-color);
+    position: absolute;
+    left: calc(50% - 8px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.parcours-item-date{
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0 15px;
+}
+.parcours-item-content{
+    background-color: black;
+    border: 3px solid var(--main-color);
+    padding: 30px 50px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px var(--main-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.parcours-item-content:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+.parcours-content h3{
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+.parcours-item-content p{
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+    width: 50%;
+}
+
+
+
+
+/*parcours-section*/
+
 /* projets sections */
 
 .projets-section{
@@ -424,13 +518,34 @@ img{
     pointer-events: auto;
 }
 
+/*CV*/
+.cv{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.4rem;
+}
+.cv-download{
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+}
 
+.cv-download a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+/*CV*/
 
 /*Responsive*/
 
 @media only screen and (max-width: 1100px){
     .s-container, header nav{
         width: 80%;
+    }
+    .typed{
+        overflow: visible;
+        border-right: .15em hidden var(--main-color);
     }
 }
 
@@ -464,7 +579,7 @@ img{
     }
 
     .s-container{
-        width: 90%;
+        width: 80%;
         flex-direction: column-reverse;
         gap: 1rem;
         padding-block: 3rem;
@@ -499,6 +614,22 @@ img{
         width: 100%;
     }
 
+
+    .parcours-item::before{
+        left: 7px;
+    }
+    .parcours-item:nth-child(odd){
+        padding-right: 0;
+        text-align: left;
+    }
+    .parcours-item:nth-child(odd),
+    .parcours-item:nth-child(even){
+        padding-left: 37px;
+    }
+    .parcours-item-dot{
+        left: 0;
+    }
+
 }
 
 
@@ -518,7 +649,7 @@ img{
     }
 
     .title{
-        font-size: 2.4rem;
+        font-size: 1.5rem;
     }
     
     
