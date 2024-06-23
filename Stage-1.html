@@ -31,6 +31,7 @@
 
     <div class="sommaire">
         <ul>
+            <li><a href="#sio">Présentation Spécialité</a></li>
             <li><a href="#contexte">Contexte</a></li>
             <li><a href="#resumes">Résumés Activités Profesionnels</a></li>
 
@@ -38,8 +39,24 @@
     </div>
 
     <div class="hero">
-        <h1>Stage de Première Année</h1>
-        <h4>Du 13 mai au 21 juin 2024</h4>
+        <h1>Première année BTS SIO</h1>
+        <h4>2023-2024</h4>
+    </div>
+
+    <div class="stage sio" id="sio">
+        <div class="stage-title">
+            <h2>Présentation Spécialité SIO SLAM</h2>
+        </div>
+        <div class="stage-content">
+            <p>Le BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers est une formation 
+            de BAC+2 pour former des techniciens supérieurs dans la conception de le développement d'applications métiers.</p>
+
+            <p>Le premier semestre consiste à une formation générale regroupant les 2 options : SISR (administration réseau) & SLAM 
+            (Développement Applications).</p>
+
+            <p>Le deuxième semestre nous suivons le programme de notre option choisis, apprentissage de différents langages de programmation dont 
+            différents modèles comme la Programmation Orienté Objet.</p>
+        </div>
     </div>
 
     <div class="stage contexte-section" id="contexte">
@@ -82,7 +99,65 @@
             <h2>Résumés Activités Profesionnels</h2>
         </div>
         <div class="stage-content">
-            <h4> </h4>
+            <h4>Début du stage</h4>
+
+            <p>Début du projet du site vitrine de la section SEGPA du collège Emile Combes de Pons.</p>
+
+            <ul>
+                <li>Création des Users Stories sur Trello</li>
+                <li>Lecture de la maquette des élèves pour la forme du site</li>
+                <li>Générer des données sur la base de données</li>
+            </ul>
+
+            <p>Commencement du développement des pages web et des fonctionalités selon la demande du client. Récupération des données depuis 
+            la base de données puis les afficher pour l'utilisateur et de pouvoir y intéragir. La conception du site est basé sur l'architecture MVC. 
+            MVC pour Modèle-Vue-Contrôleur qui est très répandu pour les applications WEB et vise à organiser le code en 3 catégories</p>
+            
+            <ul>
+                <li>Modèles -> Représente les données et les intéractions</li>
+                <li>Vues -> L'interface visuel des utilisateurs</li>
+                <li>Contrôleurs -> Intermédiaire entre le modèle et la vue</li>
+            </ul>
+
+            <p>L'architecture MVC n'était pas assez complète selon notre tuteur pour que le projet soit fonctionnels alors en fin de première semaines 
+            nous sommes passés sur un autre framework plus utilisés par des profesionnels mais simplifiés par un de nos professeurs, 
+            <a href="https://github.com/ornech/gestion_stage" target="_blank">ici pour visualiser</a>.</p>
+
+            <p>Création du dépôt sur GitHub et formation.</p>
+
+
+            <h4>Milieu du stage</h4>
+
+            <p>Après avoir terminer une grande partie du BACK-END du site, il nous faut créer le design du site en fonction de la maquette données.</p>
+
+            <h4>Maquette</h4>
+
+            <div class="stage-images">
+                <img src="images/maquette-1.png"/>
+                <img src="images/maquette-2.png"/>
+                <img src="images/maquette-3.png"/>
+            </div>
+            <h4>Version Finale</h4>
+            <div class="stage-images">
+                <img src="images/version-final-1.png"/>
+                <img src="images/version-final-2.png"/>
+                <img src="images/version-final-3.png"/>
+            </div>
+
+            <p>Pour effectuer le design du site, nous allons utiliser un framework CSS open-source appellé <i class="fa-brands fa-bootstrap"></i> Bootstrap. 
+            Il fournit des outils css pour créer un site web personnalisés et responsive selon la tailel de l'écran. Bootstrap nous permet de faciliter le design du site 
+            et de le rendre responsive au lieu de créer nous même nos classes CSS, ce qui aurait pris bien plus de temps et ne nous aurait pas permis d'avancer sur le projet.</p>
+
+            <p>Après avoir rattraper le design du site nous pouvons continuer sur les fonctionnalités du site dont la création de compte et l'authentification de session client/administrateur. 
+            Les clients pourront modifier leurs profils en ajoutant des informations tels que leur téléphone, prénom, nom et adresse pour pouvoir ajouter des produits dans leurs paniers pour passer commandes.
+            Tandis que l'administrateur pourra accéder à son dashboard pour voir les messages de contact des utilisateurs, voir les commandes passées et pourra ajouter, modifier, supprimer des produits ou l'offre du jour.
+            </p>
+
+            <h4>Fin du stage</h4>
+
+            <p>Nous avons finis le système d'authenfication, créer un compte et de rentrer le mail et le mot de passe hashé et de s'y connecter et de garder la session à travers les différentes pages.
+            Tout cela se passe dans un seul fichier dans un dossier config qui est auth.php.
+            L'administrateur peut désormais accéder à son dashboard avec toutes les fonctionnalités pour gérer les produits et son site.</p>
         </div>
     </div>
 
