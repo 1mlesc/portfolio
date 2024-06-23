@@ -21,14 +21,16 @@ body{
 header nav{/* navbar*/
     height: 15vh;
     width: 70%;
-    margin: 0 auto;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    gap: 7rem;
 }
 
 header h1{
+    margin-left: 1rem;;
     font-size: 45px;
     font-weight: 800;
     text-transform: uppercase;
