@@ -691,6 +691,8 @@ img{
 .stage-content h4{
     margin-top: 0.5rem;
     font-size: 20px;
+    color: var(--main-color);
+    margin-left: 3rem;
 }
 .stage-content p{
     margin-top: 2rem;
@@ -720,7 +722,27 @@ img{
     transform: scale(1.4);
     transition: 0.3s ease-in-out;
 }
-
+.sous-liste{
+    margin-left: 0.5rem;
+}
+.stage-title{
+    color: var(--main-color);
+}
+.tableau{
+    margin-top: 5rem;
+    margin-left: 20rem;
+}
+.tableau a{
+    color: var(--main-color);
+    text-decoration: none;
+    
+    margin-left: 25rem;
+}
+.tableau iframe{
+    background-color: white;
+    width: 1000px;
+    height: 1000px;
+}
 
 /*Contexte Section*/
 .contexte-section h4{
