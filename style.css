@@ -530,6 +530,7 @@ img{
     align-items: center;
     margin-top: 2.4rem;
     width: 600px;
+    
 }
 .cv-download{
     font-size: 23px;
@@ -634,7 +635,35 @@ img{
 
 /* compétences sections */
 
-/* Stage */
+/* blog */
+.article a{
+    text-decoration: none;
+}
+.blog-cadre{
+    margin-top: 5rem;
+    margin-left: 20rem;
+
+
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-image: linear-gradient(to right, #e2dede, #d8d5d5, #d1d0d0, #b4b1b1, #bbbbbb);
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    
+    box-shadow: 20px 20px var(--main-color);
+    transition: all .4s ease;
+
+    text-align: center;
+    color: black;
+}
+.blog-cadre:hover{
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 10px 10px var(--main-color);
+}
+
+.blog-cadre-title{
+
+}
 
 /* sommaire */
 
@@ -683,49 +712,49 @@ img{
     align-items: center;
 }
 
-.stage{
+.blog{
     margin-top: 5rem;
     margin-left: 20rem;
     margin-right: 7rem;
 }
-.stage-content h4{
+.blog-content h4{
     margin-top: 0.5rem;
     font-size: 20px;
     color: var(--main-color);
     margin-left: 3rem;
 }
-.stage-content p{
+.blog-content p{
     margin-top: 2rem;
 }
-.stage-content ul{
+.blog-content ul{
     margin-top: 2rem;;
     margin-left: 5rem;
 }
 
-.stage-content a{
+.blog-content a{
     color: white;
 }
-.stage-content a:hover{
+.blog-content a:hover{
     color: var(--main-color);
 }
-.stage-images{
+.blog-images{
     margin-top: 1rem;
     display: flex;
     justify-content: center;
     gap: 1.5rem;
 }
-.stage-images img{
+.blog-images img{
     width: 300px;
     height: 220px;
 }
-.stage-images img:hover{
+.blog-images img:hover{
     transform: scale(1.4);
     transition: 0.3s ease-in-out;
 }
 .sous-liste{
     margin-left: 0.5rem;
 }
-.stage-title{
+.blog-title{
     color: var(--main-color);
 }
 .tableau{
